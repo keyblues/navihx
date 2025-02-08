@@ -1,0 +1,11 @@
+{
+  "app": {
+    "bundleName": "www.navihx.com",
+    "patchVersionCode": 2000042,
+    "versionCode": 1000000
+  },
+  "module": {
+    "name": "entry",
+    "type": "hotreload"
+  }
+}

@@ -11,6 +11,31 @@
     {
       "name": "EntryAbility_label",
       "value": "label"
+    },
+    {
+      "name": "index_label",
+      "value": "NaviHX"
+    },
+    {
+      "name": "login_label_title",
+      "value": "NaviHX"
+    },
+    {
+      "name": "login_input_url",
+      "value": "Navidrome http://xxx:xx/xx"
+    },
+    {
+      "name": "login_input_username",
+      "value": "Username"
+    },
+    {
+      "name": "login_input_password",
+      "value": "Password"
+    },
+    {
+      "name": "login_button",
+      "value": "Sign in"
     }
+
   ]
 }

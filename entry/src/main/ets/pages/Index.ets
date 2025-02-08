@@ -1,23 +1,20 @@
+import { router } from '@kit.ArkUI';
+
 @Entry
 @Component
 struct Index {
-  @State message: string = 'Hello World!';
+  async aboutToAppear() {
+    const loggedIn = 0;
+    const targetRoute = loggedIn ? 'pages/Home' : 'pages/Login';
+
+    // 替换当前页面并清除路由栈
+    router.replaceUrl({
+      url: targetRoute,
+      params: { clearStack: true } // 关键参数：清除历史栈
+    })
+  }
 
   build() {
-    RelativeContainer() {
-      Text(this.message)
-        .id('HelloWorld')
-        .fontSize($r('app.float.page_text_font_size'))
-        .fontWeight(FontWeight.Bold)
-        .alignRules({
-          center: { anchor: '__container__', align: VerticalAlign.Center },
-          middle: { anchor: '__container__', align: HorizontalAlign.Center }
-        })
-        .onClick(() => {
-          this.message = 'Welcome';
-        })
-    }
-    .height('100%')
-    .width('100%')
+    // 空页面，不渲染任何内容
   }
 }
